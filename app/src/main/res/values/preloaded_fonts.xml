@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/architects_daughter</item>
+        <item>@font/cabin_sketch</item>
+        <item>@font/covered_by_your_grace</item>
+        <item>@font/give_you_glory</item>
+        <item>@font/grand_hotel</item>
+    </array>
+</resources>

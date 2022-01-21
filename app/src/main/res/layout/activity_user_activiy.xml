@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgbrick"
+    tools:context="com.rkrelion.muzic.myProfile">
+
+    <TextView
+        android:id="@+id/userprofileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="#80A7BBF3"
+        android:text="TextView"
+        android:textAllCaps="true"
+        android:textColor="#023480"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userprofileImage" />
+
+    <TextView
+        android:id="@+id/userprofileEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="#80A7BBF3"
+        android:fontFamily="@font/architects_daughter"
+        android:text="TextView"
+        android:textColor="#023480"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userprofileName" />
+
+    <LinearLayout
+        android:id="@+id/userprofilelinearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userprofileEmail">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/g1_user"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            app:civ_border_color="#3f51b5"
+            app:civ_border_width="0dp"
+            app:civ_shadow="true"
+            app:civ_shadow_color="#3f51b5"
+            app:civ_shadow_radius="0dp"
+            app:srcCompat="@drawable/ic_baseline_music_note_24" />
+
+        <TextView
+            android:id="@+id/user_genre_One"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="#80A7BBF3"
+            android:fontFamily="@font/covered_by_your_grace"
+            android:gravity="left"
+            android:text="TextView"
+            android:textColor="#023480"
+            android:textSize="24sp" />
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/g2_user"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            app:civ_border_color="#3f51b5"
+            app:civ_border_width="0dp"
+            app:civ_shadow="true"
+            app:civ_shadow_color="#3f51b5"
+            app:civ_shadow_radius="0dp"
+            app:srcCompat="@drawable/ic_baseline_music_note_24" />
+
+
+        <TextView
+            android:id="@+id/user_genre_Two"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="#80A7BBF3"
+            android:fontFamily="@font/covered_by_your_grace"
+            android:gravity="left"
+            android:text="TextView"
+            android:textColor="#023480"
+            android:textSize="24sp" />
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/g3_user"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            app:civ_border_color="#3f51b5"
+            app:civ_border_width="0dp"
+            app:civ_shadow="true"
+            app:civ_shadow_color="#3f51b5"
+            app:civ_shadow_radius="0dp"
+            app:srcCompat="@drawable/ic_baseline_music_note_24" />
+
+        <TextView
+            android:id="@+id/user_genre_Three"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="#80A7BBF3"
+            android:fontFamily="@font/covered_by_your_grace"
+            android:gravity="left"
+            android:text="TextView"
+            android:textColor="#023480"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/userprofileImage"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/userimg"
+        app:civ_border_color="#3f51b5"
+        app:civ_border_width="4dp"
+        app:civ_shadow="true"
+        app:civ_shadow_color="#3f51b5"
+        app:civ_shadow_radius="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutfav"
+        android:layout_width="0dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="72dp"
+        android:background="#80A7BBF3"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userprofilelinearLayout">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="133dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/heartfoc" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:fontFamily="@font/cabin_sketch"
+            android:text="See Their List of Favorites Songs"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#023480"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/right" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
